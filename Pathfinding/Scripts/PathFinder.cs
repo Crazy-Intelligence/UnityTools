@@ -1,5 +1,5 @@
-﻿using CI.Tools;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CI.General;
 
 namespace CI.Pathfinding
 {

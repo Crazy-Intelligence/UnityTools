@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System;
-using CI.Tools;
+using CI.General;
 
 namespace CI.Pathfinding
 {
