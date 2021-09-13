@@ -1,5 +1,8 @@
 {
     "name": "com.crazyintelligence.pathfinding",
-    "version": "0.0.1",
-    "displayName": "CrazyIntelligence Pathfinding"
+    "version": "1.0.0",
+    "displayName": "CrazyIntelligence Pathfinding",
+    "author": {
+        "name" : "Jasch Dhungel"
+    }
 }

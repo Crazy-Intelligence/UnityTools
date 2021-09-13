@@ -1,5 +1,8 @@
 {
     "name": "com.crazyintelligence.tools",
-    "version": "0.0.1",
-    "displayName": "CrazyIntelligence Tools"
+    "version": "1.0.0",
+    "displayName": "CrazyIntelligence Tools",
+    "author": {
+        "name" : "Jasch Dhungel"
+    }
 }
