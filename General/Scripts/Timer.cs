@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CI.General
+namespace CI.Utilities
 {
 	public class Timer
 	{

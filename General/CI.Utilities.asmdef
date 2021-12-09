@@ -1,6 +1,6 @@
 {
-    "name": "CI.General",
-    "rootNamespace": "CI.General",
+    "name": "CI.Utilities",
+    "rootNamespace": "CI.Utilities",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -10,5 +10,5 @@
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
-    "noEngineReferences": true
+    "noEngineReferences": false
 }

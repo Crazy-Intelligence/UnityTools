@@ -1,4 +1,4 @@
-namespace CI.General
+namespace CI.Utilities
 {
 	public struct GridPosition
 	{

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CI.General
+namespace CI.Utilities
 {
 	public class Grid<T>
 	{
