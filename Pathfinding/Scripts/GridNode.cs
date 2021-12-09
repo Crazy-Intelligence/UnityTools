@@ -1,4 +1,4 @@
-﻿using CI.General;
+﻿using CI.Utilities;
 
 namespace CI.Pathfinding
 {
