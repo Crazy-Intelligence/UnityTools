@@ -1,0 +1,17 @@
+{
+    "name": "CI.SceneManagment.Editor",
+    "rootNamespace": "CI.SceneManagment.Editor",
+    "references": [
+        "GUID:239a1fca2f5989441acf79d7fd68743c",
+        "GUID:1a87df8756b241347a471450ae2319f8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
