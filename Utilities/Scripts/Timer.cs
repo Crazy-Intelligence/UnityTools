@@ -5,6 +5,7 @@ namespace CI.Utilities
 	public class Timer
 	{
 		public float RemainingSeconds { get; private set; }
+		public float ElapsedSeconds { get; private set; }
 
 		public event Action OnTimerEnd;
 
@@ -16,28 +17,37 @@ namespace CI.Utilities
 
 		public void Tick(float deltaTime)
 		{
-			if (RemainingSeconds <= 0f) { return; }
+			ElapsedSeconds += deltaTime;
 
 			RemainingSeconds -= deltaTime;
 
 			CheckTimerEnd();
 		}
-		public void Reset() => RemainingSeconds = _duration;
+
+		public void Reset(float newDuration)
+		{
+			_duration = newDuration;
+
+			RemainingSeconds = _duration;
+			ElapsedSeconds = 0f;
+		}
+		public void Reset() => Reset(_duration);
 
 		private void Initialize(float duration, bool loop)
 		{
-			RemainingSeconds = duration;
-			_duration = duration;
-
+			Reset(duration);
 			_loop = loop;
 		}
+
 		private void CheckTimerEnd()
 		{
-			if (RemainingSeconds > 0f) { return; }
+			if (RemainingSeconds > 0f) return;
+
 			RemainingSeconds = 0f;
+
 			OnTimerEnd?.Invoke();
 
-			if (_loop) { Reset(); }
+			if (_loop) Reset();
 		}
 	}
 }
