@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using CI.Utilities;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	public class EditorTools
 	{

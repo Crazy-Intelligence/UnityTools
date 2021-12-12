@@ -3,7 +3,7 @@ using UnityEditor;
 using System.Collections.Generic;
 using System;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	[CustomEditor(typeof(MonoBehaviour), true, isFallback = true)]
 	public class MonoBehaviourEditor : Editor

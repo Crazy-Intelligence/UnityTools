@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	public interface IVirtualMonoBehaviourEditor
 	{

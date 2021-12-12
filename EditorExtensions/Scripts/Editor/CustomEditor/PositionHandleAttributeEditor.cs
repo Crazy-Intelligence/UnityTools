@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	public class PositionHandleAttributeEditor : IVirtualMonoBehaviourEditor
 	{

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	[AttributeUsage(AttributeTargets.Field)]
 	public class InspectorReadonlyAttribute : PropertyAttribute

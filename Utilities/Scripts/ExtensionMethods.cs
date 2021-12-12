@@ -37,27 +37,13 @@ namespace CI.Utilities
 		public static Vector3 ToVector3(this Vector2 vector) => new Vector3(vector.x, vector.y, 0f);
 		public static Vector3 ToVector3(this Vector2 vector, float z) => new Vector3(vector.x, vector.y, z);
 
-		public static Vector3 RelativeTo(this Vector3 vector, MonoBehaviour monoBehaviour)
+		public static Vector3 RelativeTo(this Vector3 vector, Component component)
 		{
-			return monoBehaviour.transform.position + vector;
+			return component.transform.position + vector;
 		}
 		public static Vector2 RelativeTo(this Vector2 vector, Component component)
 		{
 			return component.transform.position + vector.ToVector3();
-		}
-
-		public static Vector3 Rotate(this Vector3 vector, float angel)
-		{
-			var q = Quaternion.Euler(0f, 0f, angel);
-
-			var vectorPartOfQ = new Vector3(q.x, q.y, q.z);
-			var scalerPartOfQ = q.w;
-
-			var newVector = 2f * Vector3.Dot(vectorPartOfQ, vector) * vectorPartOfQ
-							+ ((scalerPartOfQ * scalerPartOfQ) - Vector3.Dot(vectorPartOfQ, vectorPartOfQ)) * vector
-							+ 2f * scalerPartOfQ * Vector3.Cross(vectorPartOfQ, vector);
-
-			return newVector;
 		}
 	}
 }

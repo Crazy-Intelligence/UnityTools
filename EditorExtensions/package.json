@@ -1,0 +1,8 @@
+{
+    "name": "com.crazyintelligence.editorextensions",
+    "version": "1.0.0",
+    "displayName": "CrazyIntelligence Editor Extensions",
+    "author": {
+        "name" : "Jasch Dhungel"
+    }
+}

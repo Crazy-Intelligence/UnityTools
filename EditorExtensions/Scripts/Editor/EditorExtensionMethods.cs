@@ -4,14 +4,14 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	public static class EditorExtensionMethods
 	{
 		public static List<FieldInfo> GetFieldsWith<TAttribute>(this MonoBehaviour monoBehaviour, BindingFlags flags, Func<FieldInfo, bool> validateField) where TAttribute : Attribute
 		{
 			var fields = new List<FieldInfo>();
-			
+
 			foreach (var fieldInfo in monoBehaviour.GetType().GetFields(flags))
 			{
 				if (!validateField(fieldInfo)) continue;
@@ -26,7 +26,7 @@ namespace CI.Utilities
 		}
 		public static List<FieldInfo> GetFieldsWith<TAttribute>(this MonoBehaviour monoBehaviour, BindingFlags flags) where TAttribute : Attribute
 		{
-			return GetFieldsWith<TAttribute>(monoBehaviour, flags, (fieldInfo) => true);
+			return monoBehaviour.GetFieldsWith<TAttribute>(flags, (fieldInfo) => true);
 		}
 	}
 }

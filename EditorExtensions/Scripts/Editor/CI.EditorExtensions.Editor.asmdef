@@ -1,7 +1,8 @@
 {
-    "name": "CI.Utilities.Editor",
-    "rootNamespace": "CI.Utilities.Editor",
+    "name": "CI.EditorExtensions.Editor",
+    "rootNamespace": "CI.EditorExtensions.Editor",
     "references": [
+        "GUID:34cc26b584064814bb1ddd2c0b025925",
         "GUID:f4556b1fd27a6fb4580c7756659c2946"
     ],
     "includePlatforms": [],

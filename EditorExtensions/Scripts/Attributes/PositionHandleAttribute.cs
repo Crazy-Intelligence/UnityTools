@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	[AttributeUsage(AttributeTargets.Field)]
 	public class PositionHandleAttribute : PropertyAttribute

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using CI.Utilities;
 
-namespace CI.Utilities
+namespace CI.EditorExtensions
 {
 	[CustomPropertyDrawer(typeof(PositionHandleAttribute))]
 	public class PositionHandleAttributePropertyDrawer : PropertyDrawer
