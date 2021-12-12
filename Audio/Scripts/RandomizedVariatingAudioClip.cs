@@ -1,5 +1,5 @@
 using UnityEngine;
-using CI.Utilities;
+using CI.Collections;
 
 namespace CI.Audio
 {

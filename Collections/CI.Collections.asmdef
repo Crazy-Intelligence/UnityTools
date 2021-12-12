@@ -1,9 +1,7 @@
 {
-    "name": "CI.Audio",
-    "rootNamespace": "CI.Audio",
-    "references": [
-        "GUID:299975a55eebd1847afa4d99cc9b93b4"
-    ],
+    "name": "CI.Collections",
+    "rootNamespace": "CI.Collections",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
