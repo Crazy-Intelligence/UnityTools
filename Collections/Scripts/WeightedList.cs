@@ -6,13 +6,13 @@ namespace CI.Collections
 	[System.Serializable]
 	public class WeightedList<T>
 	{
-		public List<ObjectWithWeight<T>> List = new List<ObjectWithWeight<T>>();
+		[SerializeField] private List<ObjectWithWeight<T>> list = new List<ObjectWithWeight<T>>();
 
 		public T GetRandom()
 		{
 			var objects = new List<T>();
 
-			foreach (var obj in List)
+			foreach (var obj in list)
 			{
 				for (int i = 0; i < obj.Weight; i++)
 				{
