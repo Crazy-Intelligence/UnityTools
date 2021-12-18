@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CI.Audio
 {
-	[CreateAssetMenu(fileName = "SimpleAudioClip", menuName = "TooManyBits/Audio/Simple")]
+	[CreateAssetMenu(fileName = "SimpleAudioClip", menuName = "CI/Audio/Simple")]
 	public class SimpleAudioClip : ConfiguredAudioClip
 	{
 		[SerializeField] private AudioClip clip;

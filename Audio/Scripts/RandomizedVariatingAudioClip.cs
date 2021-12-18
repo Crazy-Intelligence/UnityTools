@@ -3,7 +3,7 @@ using CI.Collections;
 
 namespace CI.Audio
 {
-	[CreateAssetMenu(fileName = "VariatingAudioClips", menuName = "TooManyBits/Audio/RandomVariating")]
+	[CreateAssetMenu(fileName = "VariatingAudioClips", menuName = "CI/Audio/RandomVariating")]
 	public class RandomizedVariatingAudioClip : ConfiguredAudioClip
 	{
 		[SerializeField] private WeightedList<VariatingAudioClip> clips;

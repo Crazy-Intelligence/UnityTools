@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CI.Audio
 {
-	[CreateAssetMenu(fileName = "VariatingAudioClip", menuName = "TooManyBits/Audio/Variating")]
+	[CreateAssetMenu(fileName = "VariatingAudioClip", menuName = "CI/Audio/Variating")]
 	public class VariatingAudioClip : ConfiguredAudioClip
 	{
 		[SerializeField] private AudioClip clip;
