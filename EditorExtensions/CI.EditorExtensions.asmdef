@@ -1,3 +1,14 @@
 {
-	"name": "CI.EditorExtensions"
+    "name": "CI.EditorExtensions",
+    "rootNamespace": "CI.EditorExtensions",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

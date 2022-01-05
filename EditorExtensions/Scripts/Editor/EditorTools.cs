@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+
+using UnityEngine;
 using UnityEditor;
 using CI.Utilities;
 
@@ -78,3 +80,5 @@ namespace CI.EditorExtensions
 		}
 	}
 }
+
+#endif

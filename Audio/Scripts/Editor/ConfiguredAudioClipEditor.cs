@@ -3,6 +3,8 @@
  * https://github.com/richard-fine/scriptable-object-demo/blob/main/Assets/ScriptableObject/Audio/Editor/AudioEventEditor.cs
  */
 
+#if UNITY_EDITOR
+
 using UnityEngine;
 using UnityEditor;
 
@@ -36,3 +38,5 @@ namespace CI.Audio
 		}
 	}
 }
+
+#endif

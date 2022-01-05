@@ -1,3 +1,5 @@
+#if UNITY_EDITOR
+
 using UnityEngine;
 using UnityEditor;
 
@@ -9,3 +11,5 @@ namespace CI.EditorExtensions
 		public void OnEnable(Object target, SerializedObject serializedObject);
 	}
 }
+
+#endif
